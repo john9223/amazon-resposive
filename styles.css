@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(19, 25, 33);
+    height: 60px;
+    color: white;
+}
+
+.container {
+    width: 98%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10%;
+    height: 50px;
+}
+
+.logo:hover {
+    border: 1.5px solid white;
+}
+
+.address {
+    margin-left: 15px;
+}
+
+.address img {
+    width: 150px;
+}
+
+.address img:hover {
+    border: 1.5px solid white;
+}
+
+.search-container {
+    margin-left: 25px;
+    width: 640px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.search-container:hover {
+    outline: 3px solid orange;
+}
+
+.search-select {
+    width: 60px;
+    border: none;
+    background-color: #ccc;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 3px;
+    font-size: 1.1rem;
+}
+
+.search-icon {
+    width: 50px;
+    background-color: rgb(255, 190, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.language-container p {
+    font-size: 1rem;
+}
+
+.language-container {
+    margin-left: 25px;
+}
+
+.language-image img {
+    position: relative;
+    top: -9px;
+}
+
+.language-container:hover {
+    border: 1.5px solid white;
+    height: 50px;
+}
+
+.login-container {
+    margin-left: 15px;
+}
+
+.login-container:hover {
+    outline: 1px solid white;
+}
+
+.login-container p {
+    margin: 0;
+}
+
+.account {
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+
+.return-order-container {
+    width: 65px;
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.return-order-container:hover {
+    outline: 1px solid white;
+}
+
+.return-order-container p {
+    margin: 0;
+}
+
+.order {
+    font-size: 1rem;
+    font-weight: 900;
+    display: flex;
+    width: 70px;
+}
+
+.cart-container {
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.cart-container:hover {
+    outline: 1px solid white;
+}
+
+.nav {
+    height: 40px;
+    background-color: #243040;
+    margin: 0;
+}
+
+.container-nav {
+    align-items: center;
+    padding-left: 15px;
+}
+
+.container-nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    font-size: 1.1rem;
+    align-items: center;
+    color: white;
+    list-style: none;
+}
+
+.container-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 8px;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+.tiger img {
+    height: 38px;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-btn-container {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-btn {
+    border: none;
+    padding: 100px 20px;
+    font-size: 50px;
+    background-color: transparent;
+}
+
+.card-product-container {
+    padding: 20px;
+    display: flex;
+}
+
+.card-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+    box-shadow: -5px -5px 2px rgba(0, 0, 0, 0.1), 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-product h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.card-product-nested-card {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-nested {
+}
+
+.card-nested img {
+    width: 128px;
+    height: 102px;
+    object-fit: cover;
+}
+
+.card-product-btn {
+    font-size: 14px;
+    align-self: flex-start;
+    margin: 7px 10px;
+    padding-left: 0;
+    border: none;
+    background-color: transparent;
+    color: aqua;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-select {
+        width: 20%;
+    }
+
+    .search-input {
+        width: 70%;
+    }
+
+    .language-container,
+    .login-container,
+    .return-order-container,
+    .cart-container {
+        margin-left: 0;
+    }
+}
